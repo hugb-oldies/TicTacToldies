@@ -60,6 +60,36 @@ public class BoardTest {
 	assertEquals(2, Board.checkWin() );
     }
 
+    @Test
+    public void TestVerticalLeftWin(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(0,0,1);
+	Board.markSquare(1,0,1);
+	Board.markSquare(2,0,1);
+	assertEquals(1, Board.checkWin() );
+    }
+
+    @Test
+    public void TestVerticalMidWin(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(0,1,1);
+	Board.markSquare(1,1,1);
+	Board.markSquare(2,1,1);
+	assertEquals(1, Board.checkWin() );
+    }
+
+    @Test
+    public void TestVerticalRightWin(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(0,2,2);
+	Board.markSquare(1,2,2);
+	Board.markSquare(2,2,2);
+	assertEquals(2, Board.checkWin() );
+    }
+
 
 
     @Test
