@@ -18,4 +18,9 @@ public class TictactoeTest {
 	assertEquals("Hello World", Tictactoe.HelloWorld() );
     }
 
+    @Test
+    public void winner(){
+	assertEquals(true, Tictactoe.winner() );
+    }
+
 }

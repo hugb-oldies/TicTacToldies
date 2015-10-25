@@ -8,6 +8,10 @@ public class Tictactoe{
 		return ret;
 	}
 
+	public static boolean winner() {
+		return true;
+	}
+
 	public static void main(String[] args) {
 		// do something
 	}
