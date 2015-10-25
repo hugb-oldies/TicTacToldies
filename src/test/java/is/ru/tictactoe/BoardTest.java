@@ -31,7 +31,7 @@ public class BoardTest {
 
 
     @Test
-    public void TestTopRowWinner(){
+    public void TestHorizontalTopWin(){
 	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
@@ -41,7 +41,29 @@ public class BoardTest {
     }
 
     @Test
-    public void TestWinnerWithFullBoard(){
+    public void TestHorizontalMidWin(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(1,0,1);
+	Board.markSquare(1,1,1);
+	Board.markSquare(1,2,1);
+	assertEquals(1, Board.checkWin() );
+    }
+
+    @Test
+    public void TestHorizontalBotWin(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(2,0,2);
+	Board.markSquare(2,1,2);
+	Board.markSquare(2,2,2);
+	assertEquals(2, Board.checkWin() );
+    }
+
+
+
+    @Test
+    public void TestWinnerXWithFullBoard(){
 	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
@@ -55,6 +77,22 @@ public class BoardTest {
 	Board.markSquare(2,2,1);
 	assertEquals(1, Board.checkWin() );
     }
+
+    @Test
+    public void TestWinnerOWithFullBoard(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(0,0,2);
+	Board.markSquare(0,1,2);
+	Board.markSquare(0,2,2);
+	Board.markSquare(1,0,2);
+	Board.markSquare(1,1,1);
+	Board.markSquare(1,2,1);
+	Board.markSquare(2,0,1);
+	Board.markSquare(2,1,1);
+	assertEquals(2, Board.checkWin() );
+    }
+
 
 
 
