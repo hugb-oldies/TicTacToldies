@@ -14,11 +14,20 @@ public class BoardTest {
 
 
     @Test
-    public void checkWinner(){
+    public void TestEmptyBoardNoWinner(){
 	Board.initBoard();
 	assertEquals(0, Board.checkWin() );
     }
 
+    @Test
+    public void TestNoWinnerWithThreeMarks(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
+	Board.markSquare(0,0,2);
+	Board.markSquare(0,1,1);
+	Board.markSquare(0,2,1);
+	assertEquals(0, Board.checkWin() );
+    }
 
     @Test
     public void TestOneMarkedSquareBoard(){
@@ -27,8 +36,6 @@ public class BoardTest {
 	Board.markSquare(0,0,1);
 	assertEquals(1, Board.checkSquare(0,0) );
     }
-
-
 
     @Test
     public void TestHorizontalTopWin(){
@@ -109,8 +116,6 @@ public class BoardTest {
 	Board.markSquare(2,0,1);
 	assertEquals(1, Board.checkWin() );
     }
-
-
 
     @Test
     public void TestWinnerXWithFullBoard(){
