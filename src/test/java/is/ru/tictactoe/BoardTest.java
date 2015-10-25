@@ -20,17 +20,25 @@ public class BoardTest {
 
 
     @Test
-    public void EmptyBoard(){
+    public void TestOneMarkedSquareBoard(){
 	//Tictactoe.Board board = new Tictactoe.Board();
-	assertEquals(0, Board.checkSquare(0,0) );
+	Board.initBoard();
+	Board.markSquare(0,0,1);
+	assertEquals(1, Board.checkSquare(0,0) );
     }
 
 
     @Test
-    public void TestOneMarkedSquareBoard(){
+    public void TestTopRowWinner(){
 	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.initBoard();
 	Board.markSquare(0,0,1);
-	assertEquals(0, Board.checkSquare(0,0) );
+	Board.markSquare(0,1,1);
+	Board.markSquare(0,2,1);
+	assertEquals(true, Board.winner() );
     }
+
+
+
 
 }

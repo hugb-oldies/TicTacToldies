@@ -13,7 +13,16 @@ public class Board{
 	}
 
 	public static boolean winner() {
-		return true;
+		if ( (board[0][0] == board[0][1]) && ( board[0][1] == board[0][2]) )  
+			return true;
+		else
+			return false;
+	}
+
+	public static void initBoard() {
+		for (int i=0; i<3; i++)
+			for (int j=0; j<3; j++)
+				board[i][j] = 0;
 	}
 
 	public static void markSquare(int x, int y, int player ){
