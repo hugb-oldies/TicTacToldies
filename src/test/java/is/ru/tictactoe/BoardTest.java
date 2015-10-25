@@ -6,24 +6,24 @@ import org.junit.Test;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 
-public class TictactoeTest {
+public class BoardTest {
 
     public static void main(String args[]) {
-        org.junit.runner.JUnitCore.main("is.ru.tictactoe.TictactoeTest");
+        org.junit.runner.JUnitCore.main("is.ru.tictactoe.BoardTest");
     }
 
-
-    @Test
-    public void firstTest(){
-	assertEquals("Hello World", Tictactoe.HelloWorld() );
-    }
 
     @Test
     public void winner(){
-	assertEquals(true, Tictactoe.winner() );
+	assertEquals(true, Board.winner() );
     }
 
 
+    @Test
+    public void EmptyBoard(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	assertEquals(0, Board.checkSquare(0,0) );
+    }
 
 
 }
