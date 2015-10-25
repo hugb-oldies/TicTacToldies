@@ -26,4 +26,11 @@ public class BoardTest {
     }
 
 
+    @Test
+    public void TestOneMarkedSquareBoard(){
+	//Tictactoe.Board board = new Tictactoe.Board();
+	Board.markSquare(0,0,1);
+	assertEquals(0, Board.checkSquare(0,0) );
+    }
+
 }
