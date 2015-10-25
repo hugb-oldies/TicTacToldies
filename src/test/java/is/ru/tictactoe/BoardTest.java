@@ -20,6 +20,19 @@ public class BoardTest {
     }
 
     @Test
+    public void TestEmptySquare(){
+	Board.initBoard();
+	assertEquals(true, Board.isEmpty(0,0) );
+    }
+
+    @Test
+    public void TestMarkedSquare(){
+	Board.initBoard();
+	Board.markSquare(2,2,2);
+	assertEquals(false, Board.isEmpty(2,2) );
+    }
+
+    @Test
     public void TestNoWinnerWithThreeMarks(){
 	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
