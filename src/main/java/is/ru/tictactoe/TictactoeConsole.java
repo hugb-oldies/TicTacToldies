@@ -14,10 +14,17 @@ public class TictactoeConsole{
 
 		Board.initBoard();
 		displayBoard();		
+		boolean gameOver = false;
 		// main loop
-		for (int i=0; i<9; i++) {
-
+		while (!gameOver) {
+			
+			Board.markSquare(1,2,1);
+			if (Board.getCounter() == 9)
+				break;
 		}
+
+		//displayBoard();		
+
 
 	}
 

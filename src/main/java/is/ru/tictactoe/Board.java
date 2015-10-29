@@ -65,6 +65,10 @@ public class Board {
 	public static int getActivePlayer() {
 		return activePlayer;
 	}
+
+	public static int getCounter() {
+		return counter;
+	}
 }
 
 
