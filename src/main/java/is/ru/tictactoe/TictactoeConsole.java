@@ -21,15 +21,27 @@ public class TictactoeConsole{
 		// main loop
 		while (!gameOver) {
 			int[] moves;
+			System.out.println("Player " + Board.getActivePlayer() + " move");
 			moves = getMove();
-			Board.markSquare(moves[0],moves[1], Board.getActivePlayer() );
+			if (Board.isEmpty(moves[0], moves[1])) {
+				Board.markSquare(moves[0],moves[1], Board.getActivePlayer() );
+			} else  {
+				System.out.println("Not a legal move");
+			}
 			if (Board.checkWin() != 0)  // winner or tie
 				gameOver = true;
-			if (Board.getCounter() == 9)
-				break;
+			displayBoard();
+			//if (Board.getCounter() == 9)
+			//	break;
 		}
-
-		//displayBoard();		
+		if (Board.checkWin() == -1)
+			System.out.println("Tie");
+		else if (Board.checkWin() == 1) 
+			System.out.println("Player 1 wins");
+		else if (Board.checkWin() == 2) 
+			System.out.println("Player 2 wins");
+		else
+			System.out.println("Error");				
 
 
 	}
