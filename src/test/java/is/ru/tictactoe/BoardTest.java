@@ -46,7 +46,6 @@ public class BoardTest {
 
     @Test
     public void TestNoWinnerWithThreeMarks(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,2);
 	Board.markSquare(0,1,1);
@@ -56,7 +55,6 @@ public class BoardTest {
 
     @Test
     public void TestOneMarkedSquareBoard(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
 	assertEquals(1, Board.checkSquare(0,0) );
@@ -64,7 +62,6 @@ public class BoardTest {
 
     @Test
     public void TestHorizontalTopWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
 	Board.markSquare(0,1,1);
@@ -74,7 +71,6 @@ public class BoardTest {
 
     @Test
     public void TestHorizontalMidWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(1,0,1);
 	Board.markSquare(1,1,1);
@@ -84,7 +80,6 @@ public class BoardTest {
 
     @Test
     public void TestHorizontalBotWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(2,0,2);
 	Board.markSquare(2,1,2);
@@ -94,7 +89,6 @@ public class BoardTest {
 
     @Test
     public void TestVerticalLeftWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
 	Board.markSquare(1,0,1);
@@ -104,7 +98,6 @@ public class BoardTest {
 
     @Test
     public void TestVerticalMidWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,1,1);
 	Board.markSquare(1,1,1);
@@ -114,7 +107,6 @@ public class BoardTest {
 
     @Test
     public void TestVerticalRightWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,2,2);
 	Board.markSquare(1,2,2);
@@ -124,7 +116,6 @@ public class BoardTest {
 
     @Test
     public void TestSlashRightWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,2);
 	Board.markSquare(1,1,2);
@@ -134,7 +125,6 @@ public class BoardTest {
 
     @Test
     public void TestSlashLeftWin(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,2,1);
 	Board.markSquare(1,1,1);
@@ -144,7 +134,6 @@ public class BoardTest {
 
     @Test
     public void TestWinnerXWithFullBoard(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
 	Board.markSquare(0,1,2);
@@ -160,7 +149,6 @@ public class BoardTest {
 
     @Test
     public void TestWinnerOWithFullBoard(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,2);
 	Board.markSquare(0,1,2);

@@ -11,8 +11,7 @@ public class Board {
 	private static int activePlayer = 1;  
 
 	public Board () {
-		//System.out.println("hæ");
-		//board = new int[3][3]; // { {0, 0, 0 }, {0, 0, 0 }, {0, 0, 0 } } ;
+		// empty
 	}
 
 	public static int checkWin() {		
