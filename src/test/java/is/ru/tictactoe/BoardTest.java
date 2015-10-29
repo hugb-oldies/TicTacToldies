@@ -175,7 +175,6 @@ public class BoardTest {
 
     @Test
     public void TestTie(){
-	//Tictactoe.Board board = new Tictactoe.Board();
 	Board.initBoard();
 	Board.markSquare(0,0,1);
 	Board.markSquare(0,1,2);
@@ -189,6 +188,27 @@ public class BoardTest {
 	assertEquals(-1, Board.checkWin() );
     }
 
+
+    @Test
+    public void TestActivePlayerInBeginning(){
+	Board.initBoard();
+	assertEquals(1, Board.getActivePlayer() );
+    }
+
+    @Test
+    public void TestActivePlayerAfterOneMove(){
+	Board.initBoard();
+	Board.markSquare(1,1,1);
+	assertEquals(2, Board.getActivePlayer() );
+    }
+
+    @Test
+    public void TestActivePlayerAfterTwoMoves(){
+	Board.initBoard();
+	Board.markSquare(1,1,1);
+	Board.markSquare(1,2,2);
+	assertEquals(1, Board.getActivePlayer() );
+    }
 
 
 }

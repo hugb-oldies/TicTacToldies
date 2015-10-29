@@ -7,7 +7,8 @@ import java.util.regex.Matcher;
 public class Board {
 
 	private static int[][] board = new int[3][3];
-	private static int counter = 0;
+	private static int counter = 0;	// number of moves
+	private static int activePlayer = 1;  
 
 	public Board () {
 		//System.out.println("hæ");
@@ -52,10 +53,18 @@ public class Board {
 	public static void markSquare(int x, int y, int player ){
 		board[x][y] = player;
 		counter++;
+		if (activePlayer == 1)
+			activePlayer = 2;
+		else
+			activePlayer = 1;
 	}
 
 	public static int checkSquare(int x, int y) {
 		return board[x][y];
+	}
+
+	public static int getActivePlayer() {
+		return activePlayer;
 	}
 }
 
