@@ -21,16 +21,17 @@ public class TictactoeConsole{
 		// main loop
 		while (!gameOver) {
 			int[] moves;
-			System.out.println("Player " + Board.getActivePlayer() + " move");
+			//System.out.println("Player " + Board.getActivePlayer() + " move");
 			moves = getMove();
-			if (Board.isEmpty(moves[0], moves[1])) {
-				Board.markSquare(moves[0],moves[1], Board.getActivePlayer() );
+			if (Board.isEmpty(moves[1], moves[0])) {
+				Board.markSquare(moves[1],moves[0], Board.getActivePlayer() );
 			} else  {
 				System.out.println("Not a legal move");
 			}
 			if (Board.checkWin() != 0)  // winner or tie
 				gameOver = true;
 			displayBoard();
+			System.out.println("");
 			//if (Board.getCounter() == 9)
 			//	break;
 		}
@@ -48,7 +49,7 @@ public class TictactoeConsole{
 
 	public static int[] getMove() {
 		int [] moves = {0,0};
-		System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 1 [enter]");
+		System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");
 		Scanner reader = new Scanner(System.in);
 
 		boolean inputOK = false;
@@ -60,15 +61,16 @@ public class TictactoeConsole{
 				inputOK = true;
 				//System.out.println("here");
 			} else { 
-				System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 1 [enter]");
+				System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");			
 			}
-			System.out.println(moves[0] + "-" + moves[1]);
+			//System.out.println(moves[0] + "-" + moves[1]);
 		}
 
 		return moves;
 	}
 
 	public static void displayBoard() {
+		System.out.println(" 0 1 2");
 		System.out.println("-------");
 		for (int i=0; i<3; i++) {
 			System.out.print("|");
@@ -78,7 +80,7 @@ public class TictactoeConsole{
 				else if (Board.checkSquare(i,j) == 2 ) toPrint = "x";
 				System.out.print( toPrint + "|" );
 			}
-			System.out.println("");
+			System.out.println(" " + i);
 		}
 		System.out.println("-------");
 	}
