@@ -1,4 +1,4 @@
-### Development Manual for TicTacToe
+## Development Manual for TicTacToe
 
 #### What is needed and how to get the project to build on a fresh machine
 
