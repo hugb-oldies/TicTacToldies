@@ -20,7 +20,9 @@ import org.junit.rules.ExpectedException;
 
 public class BoardTest {
 
-    public static void main(String args[]) {
+	private Board Board = new Board();
+
+    public void main(String args[]) {
         org.junit.runner.JUnitCore.main("is.ru.tictactoe.BoardTest");
     }
 

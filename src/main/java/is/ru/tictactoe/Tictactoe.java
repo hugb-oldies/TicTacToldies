@@ -13,9 +13,9 @@ public class Player{
 public class Tictactoe{
 
 
+	private Board Board = new Board();
 
-
-	public static String HelloWorld() {
+	public String HelloWorld() {
 		String ret = "Hello World";
 		return ret;
 	}
@@ -23,11 +23,11 @@ public class Tictactoe{
 /*	private static init() {
 	}
 */
-	public static boolean winner() {
+	public boolean winner() {
 		return true;
 	}
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		//Board board = new Board();
 		Board.initBoard();
 		Board.markSquare(0,0,2);

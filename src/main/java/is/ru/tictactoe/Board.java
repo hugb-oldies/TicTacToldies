@@ -6,15 +6,17 @@ import java.util.regex.Matcher;
 
 public class Board {
 
-	private static int[][] board = new int[3][3];
-	private static int counter = 0;	// number of moves
-	private static int activePlayer = 1;  
+	private int[][] board;
+	private int counter;	// number of moves
+	private int activePlayer;  
 
 	public Board () {
-		// empty
+		board = new int[3][3];
+		counter = 0;
+		activePlayer = 1;
 	}
 
-	public static int checkWin() {		
+	public int checkWin() {		
 		if ( (board[0][0] == board[0][1]) && ( board[0][1] == board[0][2]) && (board[0][0] != 0) )  
 			return board[0][0];
 		if ( (board[1][0] == board[1][1]) && ( board[1][1] == board[1][2]) && (board[1][0] != 0) )  
@@ -38,18 +40,18 @@ public class Board {
 		return 0;
 	}
 
-	public static void initBoard() {
+	public void initBoard() {
 		for (int i=0; i<3; i++)
 			for (int j=0; j<3; j++)
 				board[i][j] = 0;
 		counter = 0;
 	}
 
-	public static boolean isEmpty(int x, int y) {
+	public boolean isEmpty(int x, int y) {
 		return (board[x][y] == 0);
 	}
 
-	public static void markSquare(int x, int y, int player ){
+	public void markSquare(int x, int y, int player ){
 		board[x][y] = player;
 		counter++;
 		if (activePlayer == 1)
@@ -58,15 +60,15 @@ public class Board {
 			activePlayer = 1;
 	}
 
-	public static int checkSquare(int x, int y) {
+	public int checkSquare(int x, int y) {
 		return board[x][y];
 	}
 
-	public static int getActivePlayer() {
+	public int getActivePlayer() {
 		return activePlayer;
 	}
 
-	public static int getCounter() {
+	public int getCounter() {
 		return counter;
 	}
 }

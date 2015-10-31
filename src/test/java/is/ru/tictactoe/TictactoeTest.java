@@ -8,7 +8,7 @@ import org.junit.rules.ExpectedException;
 
 public class TictactoeTest {
 
-    public static void main(String args[]) {
+    public void main(String args[]) {
         org.junit.runner.JUnitCore.main("is.ru.tictactoe.TictactoeTest");
     }
 
