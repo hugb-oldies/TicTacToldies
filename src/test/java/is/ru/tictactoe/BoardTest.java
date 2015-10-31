@@ -66,40 +66,13 @@ public class BoardTest {
     public void TestHorizontalTopWin(){
 	myBoard.initBoard();
 	myBoard.markSquare(0,0,1);
-	myBoard.markSquare(0,1,1);
-	myBoard.markSquare(0,2,1);
-	assertEquals(1, myBoard.checkWin() );
-    }
-
-    @Test
-    public void TestHorizontalMidWin(){
-	myBoard.initBoard();
-	myBoard.markSquare(1,0,1);
-	myBoard.markSquare(1,1,1);
-	myBoard.markSquare(1,2,1);
-	assertEquals(1, myBoard.checkWin() );
-    }
-
-    @Test
-    public void TestHorizontalBotWin(){
-	myBoard.initBoard();
-	myBoard.markSquare(2,0,2);
-	myBoard.markSquare(2,1,2);
-	myBoard.markSquare(2,2,2);
-	assertEquals(2, myBoard.checkWin() );
-    }
-
-    @Test
-    public void TestVerticalLeftWin(){
-	myBoard.initBoard();
-	myBoard.markSquare(0,0,1);
 	myBoard.markSquare(1,0,1);
 	myBoard.markSquare(2,0,1);
 	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
-    public void TestVerticalMidWin(){
+    public void TestHorizontalMidWin(){
 	myBoard.initBoard();
 	myBoard.markSquare(0,1,1);
 	myBoard.markSquare(1,1,1);
@@ -108,10 +81,37 @@ public class BoardTest {
     }
 
     @Test
-    public void TestVerticalRightWin(){
+    public void TestHorizontalBotWin(){
 	myBoard.initBoard();
 	myBoard.markSquare(0,2,2);
 	myBoard.markSquare(1,2,2);
+	myBoard.markSquare(2,2,2);
+	assertEquals(2, myBoard.checkWin() );
+    }
+
+    @Test
+    public void TestVerticalLeftWin(){
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	myBoard.markSquare(0,1,1);
+	myBoard.markSquare(0,2,1);
+	assertEquals(1, myBoard.checkWin() );
+    }
+
+    @Test
+    public void TestVerticalMidWin(){
+	myBoard.initBoard();
+	myBoard.markSquare(1,0,1);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,1);
+	assertEquals(1, myBoard.checkWin() );
+    }
+
+    @Test
+    public void TestVerticalRightWin(){
+	myBoard.initBoard();
+	myBoard.markSquare(2,0,2);
+	myBoard.markSquare(2,1,2);
 	myBoard.markSquare(2,2,2);
 	assertEquals(2, myBoard.checkWin() );
     }
