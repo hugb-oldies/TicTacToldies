@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#Copy to ./build/tmp/ directory
 cp ./build/libs/tictactoe.jar ./build/tmp/
-java -jar ./build/tmp/tictactoe.jar
+#java -jar ./build/tmp/tictactoe.jar
 
+#Copy .jar outside of Working Directory
+mkdir -p ~/TicTacToeConsole
+cp ./build/libs/tictactoe.jar ~/TicTacToeConsole/
+java -jar ~/TicTacToeConsole/tictactoe.jar

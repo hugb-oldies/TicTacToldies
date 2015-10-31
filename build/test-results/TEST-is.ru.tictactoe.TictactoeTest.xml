@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="is.ru.tictactoe.TictactoeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-10-31T15:42:54" hostname="i-7f3b5dd9.csd07cloud.internal" time="0.252">
+  <properties/>
+  <testcase name="winner" classname="is.ru.tictactoe.TictactoeTest" time="0.251"/>
+  <testcase name="firstTest" classname="is.ru.tictactoe.TictactoeTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

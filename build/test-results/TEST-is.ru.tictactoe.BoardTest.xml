@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="is.ru.tictactoe.BoardTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2015-10-31T16:39:54" hostname="Gumundurs-MacBook-Pro.local" time="0.03">
   <properties/>
   <testcase name="TestActivePlayerAfterOneMove" classname="is.ru.tictactoe.BoardTest" time="0.002"/>
   <testcase name="TestMarkedSquare" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestSlashRightWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+=======
+<testsuite name="is.ru.tictactoe.BoardTest" tests="19" skipped="0" failures="0" errors="0" timestamp="2015-10-31T15:42:54" hostname="i-7f3b5dd9.csd07cloud.internal" time="0.013">
+  <properties/>
+  <testcase name="TestActivePlayerAfterOneMove" classname="is.ru.tictactoe.BoardTest" time="0.002"/>
+  <testcase name="TestMarkedSquare" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+  <testcase name="TestSlashRightWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+>>>>>>> master
   <testcase name="TestEmptySquare" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestWinnerXWithFullBoard" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestEmptyBoardNoWinner" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestVerticalMidWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestWinnerOWithFullBoard" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+<<<<<<< HEAD
   <testcase name="TestNoWinnerWithThreeMarks" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestTie" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestSlashLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
@@ -18,6 +27,17 @@
   <testcase name="TestHorizontalMidWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestVerticalRightWin" classname="is.ru.tictactoe.BoardTest" time="0.002"/>
   <testcase name="TestVerticalLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+=======
+  <testcase name="TestNoWinnerWithThreeMarks" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestTie" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestSlashLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestOneMarkedSquareBoard" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestHorizontalBotWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestActivePlayerInBeginning" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+  <testcase name="TestHorizontalMidWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestVerticalRightWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestVerticalLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+>>>>>>> master
   <testcase name="TestHorizontalTopWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestActivePlayerAfterTwoMoves" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
