@@ -78,9 +78,9 @@ public class TictactoeConsole{
 		for (int i=0; i<3; i++) {
 			System.out.print("|");
 			for (int j=0; j<3; j++) {
-				String toPrint = "1";
+				String toPrint = "x";
 				if (myBoard.checkSquare(i,j) == 0 ) toPrint = " ";
-				else if (myBoard.checkSquare(i,j) == 2 ) toPrint = "x";
+				else if (myBoard.checkSquare(i,j) == 2 ) toPrint = "o";
 				System.out.print( toPrint + "|" );
 			}
 			System.out.println(" " + i);
