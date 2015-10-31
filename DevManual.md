@@ -21,14 +21,14 @@
 URL to this repository is https://github.com/hugb-oldies/TicTacToldies.git
 
 #### Command to clone this repository onto a developer machine:
- - move to root folder      - _cd ~_
- - create initial directory - _mkdir TicTacToe_
- - move to new directory    - _cd TicTacToe_
- - clone project            - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
- - config git               - _git config user.name "[Full name of user]"_ 
- - config git               - _git config user.email "[Email of user]"_ 
- - config git               - _nano .git/config_
- - config git [_remote "origin"_] section :
+ - **move to root folder**      - _cd ~_
+ - **create initial directory** - _mkdir TicTacToe_
+ - **move to new directory**    - _cd TicTacToe_
+ - **clone project**            - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
+ - **config git**               - _git config user.name "[Full name of user]"_ 
+ - **config git**               - _git config user.email "[Email of user]"_ 
+ - **config git**               - _nano .git/config_
+ - **config git** [_remote "origin"_] section :
                             - _url = git@github.com:hugb-oldies/tictactoldies.git_
 
 #### Build environment
