@@ -12,10 +12,10 @@ public class Player{
 
 public class Tictactoe{
 
+	private Board myBoard = new Board();
 
 
-
-	public static String HelloWorld() {
+	public String HelloWorld() {
 		String ret = "Hello World";
 		return ret;
 	}
@@ -23,17 +23,17 @@ public class Tictactoe{
 /*	private static init() {
 	}
 */
-	public static boolean winner() {
+	public boolean winner() {
 		return true;
 	}
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 		//Board board = new Board();
-		Board.initBoard();
-		Board.markSquare(0,0,2);
-		Board.markSquare(0,1,1);
-		Board.markSquare(0,2,1);
-		System.out.println( Board.checkWin() );
+		myBoard.initBoard();
+		myBoard.markSquare(0,0,2);
+		myBoard.markSquare(0,1,1);
+		myBoard.markSquare(0,2,1);
+		System.out.println( myBoard.checkWin() );
 
 
 		// do something

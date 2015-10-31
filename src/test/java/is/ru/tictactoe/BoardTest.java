@@ -20,6 +20,8 @@ import org.junit.rules.ExpectedException;
 
 public class BoardTest {
 
+    Board myBoard = new Board();
+
     public static void main(String args[]) {
         org.junit.runner.JUnitCore.main("is.ru.tictactoe.BoardTest");
     }
@@ -27,175 +29,175 @@ public class BoardTest {
 
     @Test
     public void TestEmptyBoardNoWinner(){
-	Board.initBoard();
-	assertEquals(0, Board.checkWin() );
+	myBoard.initBoard();
+	assertEquals(0, myBoard.checkWin() );
     }
 
     @Test
     public void TestEmptySquare(){
-	Board.initBoard();
-	assertEquals(true, Board.isEmpty(0,0) );
+	myBoard.initBoard();
+	assertEquals(true, myBoard.isEmpty(0,0) );
     }
 
     @Test
     public void TestMarkedSquare(){
-	Board.initBoard();
-	Board.markSquare(2,2,2);
-	assertEquals(false, Board.isEmpty(2,2) );
+	myBoard.initBoard();
+	myBoard.markSquare(2,2,2);
+	assertEquals(false, myBoard.isEmpty(2,2) );
     }
 
     @Test
     public void TestNoWinnerWithThreeMarks(){
-	Board.initBoard();
-	Board.markSquare(0,0,2);
-	Board.markSquare(0,1,1);
-	Board.markSquare(0,2,1);
-	assertEquals(0, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,2);
+	myBoard.markSquare(0,1,1);
+	myBoard.markSquare(0,2,1);
+	assertEquals(0, myBoard.checkWin() );
     }
 
     @Test
     public void TestOneMarkedSquareBoard(){
-	Board.initBoard();
-	Board.markSquare(0,0,1);
-	assertEquals(1, Board.checkSquare(0,0) );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	assertEquals(1, myBoard.checkSquare(0,0) );
     }
 
     @Test
     public void TestHorizontalTopWin(){
-	Board.initBoard();
-	Board.markSquare(0,0,1);
-	Board.markSquare(0,1,1);
-	Board.markSquare(0,2,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	myBoard.markSquare(0,1,1);
+	myBoard.markSquare(0,2,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestHorizontalMidWin(){
-	Board.initBoard();
-	Board.markSquare(1,0,1);
-	Board.markSquare(1,1,1);
-	Board.markSquare(1,2,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(1,0,1);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestHorizontalBotWin(){
-	Board.initBoard();
-	Board.markSquare(2,0,2);
-	Board.markSquare(2,1,2);
-	Board.markSquare(2,2,2);
-	assertEquals(2, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(2,0,2);
+	myBoard.markSquare(2,1,2);
+	myBoard.markSquare(2,2,2);
+	assertEquals(2, myBoard.checkWin() );
     }
 
     @Test
     public void TestVerticalLeftWin(){
-	Board.initBoard();
-	Board.markSquare(0,0,1);
-	Board.markSquare(1,0,1);
-	Board.markSquare(2,0,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	myBoard.markSquare(1,0,1);
+	myBoard.markSquare(2,0,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestVerticalMidWin(){
-	Board.initBoard();
-	Board.markSquare(0,1,1);
-	Board.markSquare(1,1,1);
-	Board.markSquare(2,1,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,1,1);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(2,1,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestVerticalRightWin(){
-	Board.initBoard();
-	Board.markSquare(0,2,2);
-	Board.markSquare(1,2,2);
-	Board.markSquare(2,2,2);
-	assertEquals(2, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,2,2);
+	myBoard.markSquare(1,2,2);
+	myBoard.markSquare(2,2,2);
+	assertEquals(2, myBoard.checkWin() );
     }
 
     @Test
     public void TestSlashRightWin(){
-	Board.initBoard();
-	Board.markSquare(0,0,2);
-	Board.markSquare(1,1,2);
-	Board.markSquare(2,2,2);
-	assertEquals(2, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,2);
+	myBoard.markSquare(1,1,2);
+	myBoard.markSquare(2,2,2);
+	assertEquals(2, myBoard.checkWin() );
     }
 
     @Test
     public void TestSlashLeftWin(){
-	Board.initBoard();
-	Board.markSquare(0,2,1);
-	Board.markSquare(1,1,1);
-	Board.markSquare(2,0,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,2,1);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(2,0,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestWinnerXWithFullBoard(){
-	Board.initBoard();
-	Board.markSquare(0,0,1);
-	Board.markSquare(0,1,2);
-	Board.markSquare(0,2,1);
-	Board.markSquare(1,0,2);
-	Board.markSquare(1,1,1);
-	Board.markSquare(1,2,2);
-	Board.markSquare(2,0,2);
-	Board.markSquare(2,1,1);
-	Board.markSquare(2,2,1);
-	assertEquals(1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	myBoard.markSquare(0,1,2);
+	myBoard.markSquare(0,2,1);
+	myBoard.markSquare(1,0,2);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,2);
+	myBoard.markSquare(2,0,2);
+	myBoard.markSquare(2,1,1);
+	myBoard.markSquare(2,2,1);
+	assertEquals(1, myBoard.checkWin() );
     }
 
     @Test
     public void TestWinnerOWithFullBoard(){
-	Board.initBoard();
-	Board.markSquare(0,0,2);
-	Board.markSquare(0,1,2);
-	Board.markSquare(0,2,2);
-	Board.markSquare(1,0,2);
-	Board.markSquare(1,1,1);
-	Board.markSquare(1,2,1);
-	Board.markSquare(2,0,1);
-	Board.markSquare(2,1,1);
-	assertEquals(2, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,2);
+	myBoard.markSquare(0,1,2);
+	myBoard.markSquare(0,2,2);
+	myBoard.markSquare(1,0,2);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,1);
+	myBoard.markSquare(2,0,1);
+	myBoard.markSquare(2,1,1);
+	assertEquals(2, myBoard.checkWin() );
     }
 
     @Test
     public void TestTie(){
-	Board.initBoard();
-	Board.markSquare(0,0,1);
-	Board.markSquare(0,1,2);
-	Board.markSquare(0,2,1);
-	Board.markSquare(1,0,2);
-	Board.markSquare(1,1,1);
-	Board.markSquare(1,2,2);
-	Board.markSquare(2,0,2);
-	Board.markSquare(2,1,1);
-	Board.markSquare(2,2,2);
-	assertEquals(-1, Board.checkWin() );
+	myBoard.initBoard();
+	myBoard.markSquare(0,0,1);
+	myBoard.markSquare(0,1,2);
+	myBoard.markSquare(0,2,1);
+	myBoard.markSquare(1,0,2);
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,2);
+	myBoard.markSquare(2,0,2);
+	myBoard.markSquare(2,1,1);
+	myBoard.markSquare(2,2,2);
+	assertEquals(-1, myBoard.checkWin() );
     }
 
 
     @Test
     public void TestActivePlayerInBeginning(){
-	Board.initBoard();
-	assertEquals(1, Board.getActivePlayer() );
+	myBoard.initBoard();
+	assertEquals(1, myBoard.getActivePlayer() );
     }
 
     @Test
     public void TestActivePlayerAfterOneMove(){
-	Board.initBoard();
-	Board.markSquare(1,1,1);
-	assertEquals(2, Board.getActivePlayer() );
+	myBoard.initBoard();
+	myBoard.markSquare(1,1,1);
+	assertEquals(2, myBoard.getActivePlayer() );
     }
 
     @Test
     public void TestActivePlayerAfterTwoMoves(){
-	Board.initBoard();
-	Board.markSquare(1,1,1);
-	Board.markSquare(1,2,2);
-	assertEquals(1, Board.getActivePlayer() );
+	myBoard.initBoard();
+	myBoard.markSquare(1,1,1);
+	myBoard.markSquare(1,2,2);
+	assertEquals(1, myBoard.getActivePlayer() );
     }
 
 

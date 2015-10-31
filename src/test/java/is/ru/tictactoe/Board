@@ -6,13 +6,14 @@ import java.util.regex.Matcher;
 
 public class Board{
 
-	private static board = new int[3][3];
+	private Board myBoard;
 
 	public Board () {
-		//board = new int[3][3]; // { {0, 0, 0 }, {0, 0, 0 }, {0, 0, 0 } } ;
+		
+		myBoard = new int[3][3]; // { {0, 0, 0 }, {0, 0, 0 }, {0, 0, 0 } } ;
 	}
 
-	public static int checkSquare(int x, int y) {
+	public int checkSquare(int x, int y) {
 		return board[x][y];
 	}
 }
