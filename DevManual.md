@@ -12,11 +12,11 @@
 
    _which java_
 
-   ff nothing is returned, you´ll need to install it:
+    if nothing is returned, you´ll need to install it:
    
-   _sudo apt-get update_
+    _sudo apt-get update_
 
-   _sudo apt-get install openjdk-7-jdk_	
+    _sudo apt-get install openjdk-7-jdk_	
 
 URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
 
