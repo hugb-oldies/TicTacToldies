@@ -1,10 +1,10 @@
 ### Development Manual for TicTacToe
 
-What is needed and how to get the project to build on a fresh machine
+#### What is needed and how to get the project to build on a fresh machine
 
 - Source control client and access to source control
 
-Git is used for source control.
+** Git is used for source control. **
  - What is needed to on a linux machine to get the git client?
 
 URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
