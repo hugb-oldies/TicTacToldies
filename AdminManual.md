@@ -6,6 +6,12 @@
  - Install Git
 	sudo apt-get install git
 
+ - Go to https://github.com/hugb-oldies/TicTacToldies and fork the repository
+
+ - Clone the repository to your computer
+
+	git clone https://github.com/Username/Repository.git
+
 #### Install instructions on Windows?
 
 
