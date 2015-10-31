@@ -9,10 +9,10 @@
 - What is needed on a linux machine to get the git client?
 
  - You need Java program 
- 
    Check which version you have:
    _which java_
    If nothing is returned, you´ll need to install it:
+   
    _sudo apt-get update_
    _sudo apt-get install openjdk-7-jdk_	
 
