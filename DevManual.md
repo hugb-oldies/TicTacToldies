@@ -13,10 +13,10 @@ Command to clone repo onto developer machine :
  - create initial directory - mkdir TicTacToe
  - move to new directory    - cd TicTacToe
  - clone project            - git clone <https://github.com/hugb-oldies/TicTacToldies.git>
- - config git               - git config user.name "[Full name of user]"
- - config git               - git config user.email "[Email of user]"
+ - config git               - git config user.name _"[Full name of user]"_
+ - config git               - git config user.email _"[Email of user]"_
  - config git               - nano .git/config
- - config git [remote "origin"] section :
+ - config git _[remote "origin"]_ section :
                             - url = git@github.com:hugb-oldies/tictactoldies.git
 
 
