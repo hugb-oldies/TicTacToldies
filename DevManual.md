@@ -12,27 +12,36 @@
 
    _which java_
 
-    if nothing is returned, you´ll need to install it:
+ - if nothing is returned, you´ll need to install it:
    
     _sudo apt-get update_
 
     _sudo apt-get install openjdk-7-jdk_	
 
-URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
+URL to this repository is https://github.com/hugb-oldies/TicTacToldies.git
 
-#### Command to clone repo onto developer machine :
- - move to root folder      - cd ~
- - create initial directory - mkdir TicTacToe
- - move to new directory    - cd TicTacToe
- - clone project            - git clone https://github.com/hugb-oldies/TicTacToldies.git
- - config git               - git config user.name "[_Full name of user_]" 
- - config git               - git config user.email "[_Email of user_]" 
- - config git               - nano .git/config
- - config git [_remote "origin"_] section :
-                            - url = git@github.com:hugb-oldies/tictactoldies.git
+#### Command to clone this repository onto a developer machine:
+ - **move to root folder**      - _cd ~_
+ - **create initial directory** - _mkdir TicTacToe_
+ - **move to new directory**    - _cd TicTacToe_
+ - **clone project**            - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
+ - **config git**               - _git config user.name "[Full name of user]"_ 
+ - **config git**               - _git config user.email "[Email of user]"_ 
+ - **config git**               - _nano .git/config_
+ - **config git** [_remote "origin"_] section :
+                            - _url = git@github.com:hugb-oldies/tictactoldies.git_
 
+#### Build environment
 
-- Build environment
+- Gradle
 
-- Other necessary dependencies
+#### How to run the tests
+ 
+- _./build_and_test_
+
+- _./comile tests_
+
+- _./unit_test_
+
+#### Other necessary dependencies
 
