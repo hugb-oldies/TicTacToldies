@@ -3,6 +3,9 @@
 
 #### Install instructions on Linux
 
+ - Install Git
+	sudo apt-get install git
+
 #### Install instructions on Windows?
 
 
