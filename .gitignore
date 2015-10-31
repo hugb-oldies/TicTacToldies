@@ -1,8 +1,9 @@
-build/tmp
-build/classes
-build/libs
+#build/tmp
+#build/classes
+#build/libs
 *.class
 .gradle
+build/
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
