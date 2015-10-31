@@ -4,7 +4,8 @@
 
 - Source control client and access to source control
 
-** Git is used for source control. **
+  -- Git is used for source control. 
+	--- 
  - What is needed to on a linux machine to get the git client?
 
 URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
