@@ -9,7 +9,8 @@
 - What is needed to on a linux machine to get the git client?
 
 URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
-Command to clone repo onto developer machine :
+
+#### Command to clone repo onto developer machine :
  - move to root folder      - cd ~
  - create initial directory - mkdir TicTacToe
  - move to new directory    - cd TicTacToe
