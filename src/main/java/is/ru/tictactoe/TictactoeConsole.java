@@ -13,45 +13,49 @@ public class TictactoeConsole{
 
 	private int[] moves;
 
-	private Board Board = new Board();
+	private static Board myBoard = new Board();
 
-	public void main(String[] args) {
-
-		Board.initBoard();
-		displayBoard();		
-		boolean gameOver = false;
-		// main loop
-		while (!gameOver) {
-			int[] moves;
-			//System.out.println("Player " + Board.getActivePlayer() + " move");
-			moves = getMove();
-			if (Board.isEmpty(moves[1], moves[0])) {
-				Board.markSquare(moves[1],moves[0], Board.getActivePlayer() );
-			} else  {
-				System.out.println("Not a legal move");
+	public static void main(String[] args) {
+		//Board myBoard = new Board();
+		boolean quit = false;
+		while(!quit){
+			myBoard.initBoard();
+			displayBoard();		
+			boolean gameOver = false;
+			// main loop
+			while (!gameOver) {
+				int[] moves;
+				//System.out.println("Player " + myBoard.getActivePlayer() + " move");
+				moves = getMove();
+				if (myBoard.isEmpty(moves[1], moves[0])) {
+					myBoard.markSquare(moves[1],moves[0], myBoard.getActivePlayer() );
+				} else  {
+					System.out.println("Not a legal move");
+				}
+				if (myBoard.checkWin() != 0)  // winner or tie
+					gameOver = true;
+				displayBoard();
+				System.out.println("");
+				//if (Board.getCounter() == 9)
+				//	break;
 			}
-			if (Board.checkWin() != 0)  // winner or tie
-				gameOver = true;
-			displayBoard();
-			System.out.println("");
-			//if (Board.getCounter() == 9)
-			//	break;
+			if (myBoard.checkWin() == -1)
+				System.out.println("Tie");
+			else if (myBoard.checkWin() == 1) 
+				System.out.println("Player 1 wins");
+			else if (myBoard.checkWin() == 2) 
+				System.out.println("Player 2 wins");
+			else
+				System.out.println("Error");
+		
 		}
-		if (Board.checkWin() == -1)
-			System.out.println("Tie");
-		else if (Board.checkWin() == 1) 
-			System.out.println("Player 1 wins");
-		else if (Board.checkWin() == 2) 
-			System.out.println("Player 2 wins");
-		else
-			System.out.println("Error");				
-
 
 	}
 
-	public int[] getMove() {
+	public static int[] getMove() {
+		//Board myBoard = new Board();
 		int [] moves = {0,0};
-		System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");
+		System.out.println("Player " + myBoard.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");
 		Scanner reader = new Scanner(System.in);
 
 		boolean inputOK = false;
@@ -63,7 +67,7 @@ public class TictactoeConsole{
 				inputOK = true;
 				//System.out.println("here");
 			} else { 
-				System.out.println("Player " + Board.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");			
+				System.out.println("Player " + myBoard.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");			
 			}
 			//System.out.println(moves[0] + "-" + moves[1]);
 		}
@@ -71,15 +75,16 @@ public class TictactoeConsole{
 		return moves;
 	}
 
-	public void displayBoard() {
+	public static void displayBoard() {
+		//Board myBoard = new Board();
 		System.out.println(" 0 1 2");
 		System.out.println("-------");
 		for (int i=0; i<3; i++) {
 			System.out.print("|");
 			for (int j=0; j<3; j++) {
-				String toPrint = "1";
-				if (Board.checkSquare(i,j) == 0 ) toPrint = " ";
-				else if (Board.checkSquare(i,j) == 2 ) toPrint = "x";
+				String toPrint = "o";
+				if (myBoard.checkSquare(i,j) == 0 ) toPrint = " ";
+				else if (myBoard.checkSquare(i,j) == 2 ) toPrint = "x";
 				System.out.print( toPrint + "|" );
 			}
 			System.out.println(" " + i);

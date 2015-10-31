@@ -13,7 +13,7 @@ public class Player{
 public class Tictactoe{
 
 
-	private Board Board = new Board();
+	//private Board Board = new Board();
 
 	public String HelloWorld() {
 		String ret = "Hello World";
@@ -27,13 +27,14 @@ public class Tictactoe{
 		return true;
 	}
 
-	public void main(String[] args) {
-		//Board board = new Board();
-		Board.initBoard();
-		Board.markSquare(0,0,2);
-		Board.markSquare(0,1,1);
-		Board.markSquare(0,2,1);
-		System.out.println( Board.checkWin() );
+	public static void main(String[] args) {
+		Board myBoard = new Board();
+		
+		myBoard.initBoard();
+		myBoard.markSquare(0,0,2);
+		myBoard.markSquare(0,1,1);
+		myBoard.markSquare(0,2,1);
+		System.out.println( myBoard.checkWin() );
 
 
 		// do something

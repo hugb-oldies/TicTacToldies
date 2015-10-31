@@ -13,7 +13,7 @@ public class TictactoeTest {
     }
 
 
-    @Test
+/*    @Test
     public void firstTest(){
 	assertEquals("Hello World", Tictactoe.HelloWorld() );
     }
@@ -22,7 +22,7 @@ public class TictactoeTest {
     public void winner(){
 	assertEquals(true, Tictactoe.winner() );
     }
-
+*/
 
 
 
