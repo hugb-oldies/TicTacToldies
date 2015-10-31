@@ -69,8 +69,7 @@ public class Board {
 	}
 
 	public int getCounter() {
-		return counter;
+		return counter;	
 	}
+
 }
-
-

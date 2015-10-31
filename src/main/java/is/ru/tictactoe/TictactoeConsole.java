@@ -61,7 +61,6 @@ public class TictactoeConsole{
 
 			if ( (moves[0] >= 0) && (moves[0] <=2) && (moves[1] >= 0) && (moves[1] <=2) ) {
 				inputOK = true;
-				//System.out.println("here");
 			} else { 
 				System.out.println("Player " + myBoard.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");			
 			}
