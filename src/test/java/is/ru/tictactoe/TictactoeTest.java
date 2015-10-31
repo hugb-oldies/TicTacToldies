@@ -8,19 +8,22 @@ import org.junit.rules.ExpectedException;
 
 public class TictactoeTest {
 
-    public static void main(String args[]) {
+    public void main(String args[]) {
         org.junit.runner.JUnitCore.main("is.ru.tictactoe.TictactoeTest");
     }
-
+/*
 
     @Test
-    public void firstTest(){
+    public static void firstTest(){
 	assertEquals("Hello World", Tictactoe.HelloWorld() );
     }
 
     @Test
-    public void winner(){
+    public static void winner(){
 	assertEquals(true, Tictactoe.winner() );
     }
+*/
+
+
 
 }

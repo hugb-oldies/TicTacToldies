@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/hugb-oldies/TicTacToldies.svg?branch=master)](https://travis-ci.org/hugb-oldies/TicTacToldies)
 ## TicTacToldies
 
 ### Java TicTacTo game - Software Engineering 2015
