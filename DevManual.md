@@ -18,16 +18,16 @@
 
     _sudo apt-get install openjdk-7-jdk_	
 
-URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
+URL to this repository is https://github.com/hugb-oldies/TicTacToldies.git
 
-#### Command to clone repo onto developer machine :
- - move to root folder      - cd ~
- - create initial directory - mkdir TicTacToe
- - move to new directory    - cd TicTacToe
- - clone project            - git clone https://github.com/hugb-oldies/TicTacToldies.git
- - config git               - git config user.name "[_Full name of user_]" 
- - config git               - git config user.email "[_Email of user_]" 
- - config git               - nano .git/config
+#### Command to clone this repository onto a developer machine:
+ - move to root folder      - _cd ~_
+ - create initial directory - _mkdir TicTacToe_
+ - move to new directory    - _cd TicTacToe_
+ - clone project            - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
+ - config git               - _git config user.name "[_Full name of user_]"_ 
+ - config git               - _git config user.email "[_Email of user_]"_ 
+ - config git               - _nano .git/config_
  - config git [_remote "origin"_] section :
                             - url = git@github.com:hugb-oldies/tictactoldies.git
 
@@ -39,9 +39,9 @@ URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
  
 - _./build_and_test_
 
-- _./comile tests
+- _./comile tests_
 
-- _./unit_test
+- _./unit_test_
 
 #### Other necessary dependencies
 
