@@ -1,4 +1,4 @@
-
+## Admin Manual
 ### How to setup up and run TicTacToe on a fresh machine
 
 #### Install instructions on Linux
