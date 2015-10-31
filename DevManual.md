@@ -12,7 +12,7 @@
 
    _which java_
 
-    if nothing is returned, you´ll need to install it:
+ - if nothing is returned, you´ll need to install it:
    
     _sudo apt-get update_
 
