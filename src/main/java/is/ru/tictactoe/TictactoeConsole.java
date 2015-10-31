@@ -11,11 +11,11 @@ import java.io.InputStreamReader;
 
 public class TictactoeConsole{
 
-	private int[] moves;
-	private Board myBoard = new Board(); 	
+	private int[] moves; 	
+	private static Board myBoard = new Board();
 
-	public void main(String[] args) {
-
+	public static void main(String[] args) {
+		
 		myBoard.initBoard();
 		displayBoard();		
 		boolean gameOver = false;
@@ -48,7 +48,8 @@ public class TictactoeConsole{
 
 	}
 
-	public int[] getMove() {
+	public static int[] getMove() {
+
 		int [] moves = {0,0};
 		System.out.println("Player " + myBoard.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");
 		Scanner reader = new Scanner(System.in);
@@ -70,7 +71,8 @@ public class TictactoeConsole{
 		return moves;
 	}
 
-	public void displayBoard() {
+	public static void displayBoard() {
+		
 		System.out.println(" 0 1 2");
 		System.out.println("-------");
 		for (int i=0; i<3; i++) {
