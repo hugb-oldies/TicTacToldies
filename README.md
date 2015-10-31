@@ -8,13 +8,15 @@
 
 #### Software used
  	
-	Java version
+	Java version 1.8.0
  
-	Gradle
+	Gradle version 2.8
 
 	Junit
 
 	Travis
+
+	Cobertura 2.1.1
 
 #### Additional tools
 
