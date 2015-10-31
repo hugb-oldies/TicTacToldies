@@ -12,7 +12,7 @@
 
    _which java_
 
-    if nothing is returned, you´ll need to install it:
+ - if nothing is returned, you´ll need to install it:
    
     _sudo apt-get update_
 
@@ -33,6 +33,14 @@ URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
 
 
 - Build environment
+
+#### How to run the tests
+ 
+- _./build_and_test_
+
+- _./comile tests
+
+-- _./unit_test
 
 - Other necessary dependencies
 
