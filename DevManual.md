@@ -31,8 +31,9 @@ URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
  - config git [_remote "origin"_] section :
                             - url = git@github.com:hugb-oldies/tictactoldies.git
 
+#### Build environment
 
-- Build environment
+- Gradle
 
 #### How to run the tests
  
@@ -40,7 +41,7 @@ URL to repo is https://github.com/hugb-oldies/TicTacToldies.git
 
 - _./comile tests
 
--- _./unit_test
+- _./unit_test
 
-- Other necessary dependencies
+#### Other necessary dependencies
 
