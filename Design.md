@@ -1,3 +1,0 @@
-### Design Report for TicTacToe
-
- 
