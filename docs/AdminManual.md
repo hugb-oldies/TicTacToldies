@@ -1,27 +1,15 @@
 ## Admin Manual
-### How to setup up and run TicTacToe on a fresh machine
 
-#### Install instructions on Linux
+How to install and run the program on clients machine (in case
+of simple desktop program) ?
 
- - Install Git
-	sudo apt-get install git
+- Install Java Development Kit
 
- - Go to https://github.com/hugb-oldies/TicTacToldies and fork the repository
+	sudo apt-get install openjdk-7jdk
 
- - Clone the repository to your computer
+- After the program has been build and deployed (see Development Manual) you 
+  can find the TicTacToeConsole (~/TicTacToeConsole) directory that contains 
+  a java archive file.
 
-	git clone https://github.com/Username/Repository.git
- - 
-
-#### Install instructions on Windows?
-
-
-#### Run TicTacToe on Linux
-
-#### Run TicTacToe on Windows?
-
-
-#### Deploy on Linux Web Server?
-#### Run on Linux Web Server?
-#### Maintain on Linux Web Server?
+  	java -jar tictactoe.jar  
 
