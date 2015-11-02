@@ -4,3 +4,5 @@
 ./bin/compile
 ./bin/compile_tests
 ./bin/unit_test
+./bin/report
+./bin/deploy

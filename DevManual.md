@@ -21,13 +21,11 @@
 URL to this repository is https://github.com/hugb-oldies/TicTacToldies.git
 
 #### Command to clone this repository onto a developer machine:
- - **move to root folder**      - _cd ~_
- - **create initial directory** - _mkdir TicTacToe_
- - **move to new directory**    - _cd TicTacToe_
- - **clone project**            - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
- - **config git**               - _git config user.name "[Full name of user]"_ 
- - **config git**               - _git config user.email "[Email of user]"_ 
- - **config git**               - _nano .git/config_
+ - **traverse to desired folder**     -  for home folder: _cd ~_
+ - **clone project**                  - _git clone https://github.com/hugb-oldies/TicTacToldies.git_
+ - **config git**                     - _git config user.name "[Full name of user]"_ 
+ - **config git**                     - _git config user.email "[Email of user]"_ 
+ - **config git**                     - _nano .git/config_
  - **config git** [_remote "origin"_] section :
                             - _url = git@github.com:hugb-oldies/tictactoldies.git_
 
@@ -37,11 +35,13 @@ URL to this repository is https://github.com/hugb-oldies/TicTacToldies.git
 
 #### How to run the tests
  
-- _./build_and_test_
-
-- _./comile tests_
-
-- _./unit_test_
+- _./bin/build_and_test_ - runs all tests
+- _./bin/compile - _compiles source code_
+. _./bin/compile_tests - _compiles uni tests_
+- _./bin/unit_test_ - _runs unit tests_
+. _./bin/report_ - _generates cobertura report_
+. _./bin/deploy_ - _generates and deploys a jar file to an external location and then runs it_
 
 #### Other necessary dependencies
 
+. _None_

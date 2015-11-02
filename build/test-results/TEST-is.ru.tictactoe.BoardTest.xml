@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="is.ru.tictactoe.BoardTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2015-10-31T18:44:20" hostname="i-7f3b5dd9.csd07cloud.internal" time="0.011">
+<testsuite name="is.ru.tictactoe.BoardTest" tests="21" skipped="0" failures="0" errors="0" timestamp="2015-11-02T17:40:47" hostname="i-7f3b5dd9.csd07cloud.internal" time="0.006">
   <properties/>
   <testcase name="TestActivePlayerAfterOneMove" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestMarkedSquare" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
-  <testcase name="TestCounterAfterOneMove" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestCounterAfterOneMove" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestSlashRightWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestEmptySquare" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestWinnerXWithFullBoard" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
@@ -16,9 +16,9 @@
   <testcase name="TestOneMarkedSquareBoard" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestHorizontalBotWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestActivePlayerInBeginning" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
-  <testcase name="TestHorizontalMidWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
+  <testcase name="TestHorizontalMidWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
   <testcase name="TestVerticalRightWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
-  <testcase name="TestVerticalLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.001"/>
+  <testcase name="TestVerticalLeftWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestCounterAfterInit" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestHorizontalTopWin" classname="is.ru.tictactoe.BoardTest" time="0.0"/>
   <testcase name="TestActivePlayerAfterTwoMoves" classname="is.ru.tictactoe.BoardTest" time="0.0"/>

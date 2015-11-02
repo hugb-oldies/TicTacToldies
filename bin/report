@@ -1,0 +1,3 @@
+./gradlew cobertura
+./gradlew coberturaCheck
+./gradlew performCoverageCheck
