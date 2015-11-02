@@ -9,7 +9,20 @@ Tic Tac Toe has two classes:
  - Board
 
 #### TictactoeConsole
-
-
+private Board myBoard; 
+public String HelloWorld();
+public boolean winner();
+pulic void main();
 
 #### Board
+private int [][] board;
+private int counter;
+private int activePlayer;
+public Board();
+public int checkWin();
+public void initBoard();
+public boolean isEmpty();
+public void markSquare();
+public int checkSquare();
+public int getActivePlayer();
+public int getCounter();
