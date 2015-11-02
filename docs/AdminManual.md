@@ -11,6 +11,7 @@
  - Clone the repository to your computer
 
 	git clone https://github.com/Username/Repository.git
+ - 
 
 #### Install instructions on Windows?
 
