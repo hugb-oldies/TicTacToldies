@@ -8,7 +8,7 @@ Tic Tac Toe has two classes:
  - TictactoeConsole
  - Board
 
-#### TictactoeConsole
+#### class TictactoeConsole
 private Board myBoard;
  
 public String HelloWorld();
@@ -17,7 +17,7 @@ public boolean winner();
 
 pulic void main();
 
-#### Board
+#### class Board
 private int [][] board;
 
 private int counter;
