@@ -5,9 +5,6 @@ import java.util.regex.Matcher;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-//import is.ru.tictactoe.Board;
-
-
 
 public class TictactoeConsole{
 
@@ -22,7 +19,6 @@ public class TictactoeConsole{
 		// main loop
 		while (!gameOver) {
 			int[] moves;
-			//System.out.println("Player " + myBoard.getActivePlayer() + " move");
 			moves = getMove();
 			if (myBoard.isEmpty(moves[1], moves[0])) {
 				myBoard.markSquare(moves[1],moves[0], myBoard.getActivePlayer() );
@@ -33,8 +29,6 @@ public class TictactoeConsole{
 				gameOver = true;
 			displayBoard();
 			System.out.println("");
-			//if (myBoard.getCounter() == 9)
-			//	break;
 		}
 		if (myBoard.checkWin() == -1)
 			System.out.println("Tie");
@@ -43,9 +37,7 @@ public class TictactoeConsole{
 		else if (myBoard.checkWin() == 2) 
 			System.out.println("Player 2 wins");
 		else
-			System.out.println("Error");				
-
-
+			System.out.println("Error");			
 	}
 
 	public static int[] getMove() {
@@ -64,7 +56,6 @@ public class TictactoeConsole{
 			} else { 
 				System.out.println("Player " + myBoard.getActivePlayer() + " move" + " example: 1 (column) 1 (row)  [enter]");			
 			}
-			//System.out.println(moves[0] + "-" + moves[1]);
 		}
 
 		return moves;
