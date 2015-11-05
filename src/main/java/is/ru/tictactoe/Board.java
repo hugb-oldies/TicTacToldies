@@ -45,6 +45,8 @@ public class Board {
 			for (int j=0; j<3; j++)
 				board[i][j] = 0;
 		counter = 0;
+
+
 	}
 
 	public boolean isEmpty(int x, int y) {
